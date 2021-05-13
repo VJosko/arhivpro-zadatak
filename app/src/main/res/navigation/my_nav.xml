@@ -9,5 +9,19 @@
         android:id="@+id/searchFragment"
         android:name="com.vudrag.arhivpro.SearchFragment"
         android:label="fragment_search"
-        tools:layout="@layout/fragment_search" />
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.vudrag.arhivpro.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" >
+        <argument
+            android:name="subjectId"
+            app:argType="string"
+            android:defaultValue="-1" />
+    </fragment>
 </navigation>

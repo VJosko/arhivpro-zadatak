@@ -131,7 +131,6 @@ public class SearchViewModel extends ViewModel {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("terms", terms);
         editor.apply();
-        Log.d("TAG", "saveInput: ______" + terms);
     }
 
     public void loadTerms(){
